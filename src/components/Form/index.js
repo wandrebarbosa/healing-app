@@ -16,17 +16,17 @@ function imcCalculator(){
 }
 
 function validationImc(){
-    if (height != null && height != null) {
-        imcCalculator()
-        setHeight(null)
-        setWeight(null)
-        setMessageImc("Seu imc é igual a:")
-        setTextButton("Calcular Novamente")
-        return
+    if (weight != null && height != null) {
+        imcCalculator();
+        setHeight(null);
+        setWeight(null);
+        setMessageImc("Seu imc é igual a:");
+        setTextButton("Calcular Novamente");
+        return;
     }
-    setImc(null)
-    setTextButton("Calcular IMC")
-    setMessageImc("preencha o peso e altura")
+    setImc(null);
+    setTextButton("Calcular IMC");
+    setMessageImc("preencha o peso e altura");
 }
     return(
         <View style={styles.formContext}>
@@ -48,14 +48,14 @@ function validationImc(){
                  placeholder='Ex. 80.45'
                  keyboardType='numeric'
                 />
-            <TouchableOpacity 
-            style={styles.buttonCalculator}
-            onPress={() => {
-                validationImc()
-            }}
-            >
-            <Text style={styles.textButtonCalculator}>{textButton}</Text>
-            </TouchableOpacity>
+                <TouchableOpacity 
+                style={styles.buttonCalculator}
+                onPress={() => {
+                    validationImc()
+                }}
+                >
+                    <Text style={styles.textButtonCalculator}>{textButton}</Text>
+                </TouchableOpacity>
             </View>
             <ResultImc messageResultImc={messageImc} resultImc={imc}/>
         </View>
