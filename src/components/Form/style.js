@@ -1,24 +1,24 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
-    formContext: {
+   const styles = StyleSheet.create({
+    formContext:{
         width: "100%",
         height: "100%",
         bottom: 0,
         backgroundColor: "#ffffff",
+        alignItems: "center",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
-        alignItems: "center",
         marginTop: 30,
     },
     form: {
         width: "100%",
-        height: "100%",
+        height: "auto",
         marginTop: 30,
-        padding: 30
+        padding: 10
     },
     formLabel: {
-        color: "#000000",
+        color: "#00000",
         fontSize: 18,
         paddingLeft: 20,
     },
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#f6f6f6",
         height: 40,
         margin: 12,
-        padding: 10,
+        paddingLeft: 10,
     },
     buttonCalculator: {
         borderRadius: 50,
@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
         marginLeft: 12,
         margin: 30,
     },
-    textButtonCalculator: {
+    textButtonCalculator:{
         fontSize: 20,
         color: "#ffffff",
     }
-});
+   });
 
 export default styles

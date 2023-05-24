@@ -1,15 +1,13 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    resultImc: {
+    resultIcm: {
         flex: 1,
         marginTop: 15,
-        paddingTop:60,
+        paddingTop: 60,
         borderRadius: 50,
         alignItems: "center",
         width: "100%",
-        fontSize: 48,
-        color: "#ff0043",
     },
     numberImc: {
         fontSize: 48,
@@ -19,8 +17,8 @@ const styles = StyleSheet.create({
     information: {
         fontSize: 18,
         color: "#ff0043",
-        fontWeight: "bold"
-    }
-});
+        fontWeight: "bold",
+    },
+})
 
 export default styles
